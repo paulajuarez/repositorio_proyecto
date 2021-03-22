@@ -1,0 +1,309 @@
+@charset "UTF-8";
+* {
+  background-color: #000000; }
+
+/*Barra de Navegación*/
+nav {
+  background-color: #000000; }
+  nav .nav-item {
+    font-size: 20px;
+    padding: 15px 60px; }
+  nav .nav-link {
+    color: #F3A6BB;
+    font-size: 20px; }
+  nav .nav-link:hover {
+    background: #EBB6C5;
+    color: #000000;
+    padding: 10px 60px; }
+  nav .navbar-toggler {
+    background: #F3A6BB;
+    border: none;
+    padding: 10px 6px;
+    outline: none; }
+  nav .navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: black; }
+  nav .navbar-toggler span + span {
+    margin-top: 4px;
+    width: 18px;
+    margin-left: 4px; }
+  nav .navbar-toggler span + span + span {
+    width: 10px;
+    margin-left: 10px; }
+
+/*Footer*/
+footer {
+  background-color: #000000;
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  color: #EBB6C5;
+  box-sizing: border-box; }
+
+.caja-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  .caja-footer h3 {
+    font-size: 25px;
+    text-transform: capitalize; }
+  .caja-footer p {
+    max-width: 600px;
+    margin: 10px auto; }
+
+.redes-sociales {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .redes-sociales li {
+    margin: 0 10px; }
+  .redes-sociales a {
+    text-decoration: none;
+    color: #F3A6BB; }
+  .redes-sociales a:hover {
+    color: #f6eeee; }
+
+/*Estilos del index*/
+#carousel {
+  display: flex;
+  height: auto; }
+
+.carousel-inner img {
+  display: block;
+  margin: auto; }
+
+.carousel-caption {
+  background-color: transparent; }
+  .carousel-caption h5 {
+    background-color: transparent; }
+  .carousel-caption p {
+    background-color: transparent;
+    font-size: xx-large; }
+
+/**Sección del formulario**/
+.cajaform {
+  position: relative;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  background-color: #EBB6C5; }
+
+.imgbox {
+  position: relative;
+  width: 50%;
+  height: 100%; }
+  .imgbox img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 75%;
+    height: 75%;
+    object-fit: cover; }
+
+.contentf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #EBB6C5; }
+  .contentf h2 {
+    background: #EBB6C5;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px #EBB6C5;
+    border-bottom: 4px solid #F3A6BB;
+    display: inline-block; }
+  .contentf .cajainput {
+    margin-bottom: 30px #EBB6C5;
+    background-color: #EBB6C5; }
+    .contentf .cajainput input {
+      width: 100%;
+      padding: 15px 30px #EBB6C5;
+      outline: none;
+      font-weight: 400;
+      border: 1px solid white;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #000000;
+      background: #EBB6C5;
+      border-radius: 30px; }
+    .contentf .cajainput .submit {
+      background-color: #000000;
+      color: #EBB6C5;
+      outline: none;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top: 30px; }
+    .contentf .cajainput span {
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      display: inline-block;
+      color: #000000;
+      font-weight: 300;
+      letter-spacing: 1px;
+      background-color: #EBB6C5; }
+
+@media (max-width: 768px) {
+  .contentf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+    .contentf .imgbox {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: 0;
+      height: 100%; }
+    .contentf .form {
+      width: 100%;
+      padding-top: 40px;
+      background: white;
+      margin: 50px; } }
+
+/**ESTILOS DE INTEGRANTES**/
+.introintegrantes {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 300px; }
+
+.titulointegrantes {
+  text-align: center;
+  color: #F3A6BB; }
+
+.texti {
+  color: #F3A6BB; }
+
+/**Estilos de BLOG**/
+.bloquepyf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  padding: 5rem;
+  background-color: #F3A6BB; }
+  .bloquepyf .bloquepyf__imagen {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px; }
+  .bloquepyf .bloquepyf__texto {
+    font-size: medium;
+    background-color: #F3A6BB; }
+  .bloquepyf .bloquepyf__pregunta {
+    background-color: #F3A6BB; }
+
+/**Estilos de MULTIMEDIA**/
+.multi-box {
+  height: 100px;
+  background-color: #F3A6BB; }
+  .multi-box p {
+    background-color: #F3A6BB;
+    color: #000000;
+    text-align: center;
+    margin: auto;
+    font-size: 25px; }
+
+.multir {
+  padding-bottom: 12px; }
+
+.multih {
+  background-color: #E4A4B7;
+  border-radius: 10px; }
+
+.multitransp {
+  background-color: transparent; }
+
+.img-text {
+  width: 100%;
+  height: 250px;
+  display: block;
+  text-align: center;
+  padding-top: 7%;
+  background: white;
+  color: #F3A6BB;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
+  .img-text h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent; }
+  .img-text p {
+    font-size: 25px;
+    background: transparent; }
+
+.caja-multi {
+  position: relative;
+  margin: bottom 30px; }
+
+.img-area {
+  width: 100%;
+  height: 250px;
+  border-top: 15px solid white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; }
+  .img-area img {
+    width: 100%;
+    height: 250px; }
+
+.cuadrado1 {
+  background-color: #E4A4B7;
+  width: 400px;
+  height: 400px;
+  margin-top: 10px; }
+  .cuadrado1 p {
+    background-color: #E4A4B7;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    margin: auto; }
+
+.cuadrado2 {
+  background-color: #EBB6C5;
+  width: 400px;
+  height: 400px;
+  margin-top: 10px; }
+  .cuadrado2 p {
+    background-color: #EBB6C5;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    margin: auto; }
+
+.cuadrado3 {
+  background-color: #f6eeee;
+  width: 400px;
+  height: 400px;
+  margin-top: 10px; }
+  .cuadrado3 p {
+    background-color: #f6eeee;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    margin: auto; }
+
+.contenedor-galeria {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .contenedor-galeria img {
+    width: 25%;
+    margin: 10px;
+    height: 25%;
+    flex: auto;
+    padding: 20px;
+    background-color: white; }
